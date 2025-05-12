@@ -2,7 +2,7 @@ export function ContactUs() {
     return (
         <section 
             id="contact-us"
-            className="min-h-[938px] w-full bg-[#000000]"
+            className="min-h-[938px] md:w-full bg-[#000000]"
             style={
                 {
                     backgroundImage: "url('/bg-contact-us.svg')",
@@ -12,7 +12,7 @@ export function ContactUs() {
             }
         >
             {/* contenido */}
-            <div className="hero-content flex flex-col items-center justify-start text-center pt-32">
+            <div className="hero-content flex flex-col items-center justify-start text-center pt-55">
                 <h1 className="font-primary text-[#F5A31F] md:text-1xl pb-13">
                     CONTACT US
                 </h1>
@@ -56,12 +56,15 @@ export function ContactUs() {
                     {/* Submit */}
                     <button
                       type="submit"
-                      className="w-75 bg-[#F5A31F] text-white font-primary py-3 rounded-lg hover:bg-orange-600 transition"
-                    >
+                      className="w-90 md:col-span-2 justify-self-center bg-[#F5A31F] text-white font-primary rounded-full px-8 py-3 hover:bg-yellow-600 transition focus:outline-none focus:ring-4 focus:ring-yellow-300">
                       Send Message
                     </button>
                 </form>
             </div>
+
+            {/* Black container */}
+            
+
         </section>
     )
 }
