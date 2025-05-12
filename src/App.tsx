@@ -16,6 +16,7 @@ function App() {
       <TrustedBy />
       <CompanyPortfolio />
       <ContactUs />
+      <Footer />
     </>
   )
 }
