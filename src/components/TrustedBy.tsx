@@ -30,9 +30,9 @@ export function TrustedBy() {
     const row3 = logos.slice(14);
 
     return (
-        <section 
+        <section
             id="trusted-by"
-            className="min-h-[400px] bg-[#FFFFFF] flex items-center justify-center py-20"
+            className="min-h-[400px] md:w-full bg-[#FFFFFF] flex items-center justify-center md:py-20"
         >
             {/* Contenido del encabezado */}
             <div className="flex flex-col items-center justify-start text-center mb-16">
