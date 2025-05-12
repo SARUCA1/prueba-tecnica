@@ -49,7 +49,7 @@ export function ContactUs() {
                       <textarea
                         placeholder="Your Message"
                         rows={6}
-                        className="w-full p-4 bg-white rounded-lg placeholder-gray-400 text-black focus:outline-none"
+                        className="w-full p-4 bg-white rounded-lg placeholder-gray-400 text-black focus:outline-none resize-none"
                       />
                     </div>
                 
