@@ -23,7 +23,7 @@ export function ContactUs() {
 
             <div className="w-full max-w-4xl mx-auto px-4 mt-12">
                 <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Name */}
+                  {/* Name */}
                     <div className="flex flex-col">
                       <label className="text-white mb-2">Name</label>
                       <input

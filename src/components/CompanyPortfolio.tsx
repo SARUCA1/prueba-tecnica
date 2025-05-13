@@ -1,12 +1,19 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { PrevArrow } from "./Arrow";
+import { NextArrow } from './Arrow';
 
 export function CompanyPortfolio() {
     const settings =  {
         arrows: true,
+        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow />,
         infinite: true,
         speed: 500,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
         slidesToShow: 3,
         slidesToScroll: 1
     };

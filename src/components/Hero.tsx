@@ -1,3 +1,9 @@
+import { WhoWeAre } from "./WhoWeAre"
+import { FoundingPartners } from "./FoundingPartners"
+import { CompanyPortfolio } from "./CompanyPortfolio"
+import { TrustedBy } from "./TrustedBy"
+import { ContactUs } from "./ContactUs"
+
 export function Hero() {
     return (
         <section 
@@ -14,11 +20,36 @@ export function Hero() {
             {/* navbar */}
             <nav className="absolute top-0 left-0 w-full flex items-center justify-end px-4 py-4 pr-25">
                 <ul className="flex space-x-4 ml-auto">
-                    <li className="text-white font-primary">What We Do</li>
-                    <li className="text-white font-primary">Who We Are</li>
-                    <li className="text-white font-primary">Portfolio</li>
-                    <li className="text-white font-primary">Tora Labs</li>
-                    <li className="text-white font-primary">Contact Us</li>
+                    <li className="text-white font-primary">
+                      <a href="#hero">
+                        What We Do
+                      </a>
+                    </li>
+                    <li className="text-white font-primary">
+                      <a href="#who-we-are">
+                        Who We Are
+                      </a>
+                    </li>
+                    <li className="text-white font-primary">
+                      <a href="#founding-partners">
+                        Founding Partners
+                      </a>
+                    </li>
+                    <li className="text-white font-primary">
+                      <a href="#trusted-by">
+                        Trusted By
+                      </a>
+                    </li>
+                    <li className="text-white font-primary">
+                      <a href="#company-portfolio">
+                        Commpany Portfolio
+                      </a>
+                    </li>
+                    <li className="text-white font-primary">
+                      <a href="#contact-us">
+                        Contact Us
+                      </a>
+                    </li>
                 </ul>
             </nav>
 
