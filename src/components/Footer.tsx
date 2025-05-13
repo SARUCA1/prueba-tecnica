@@ -36,7 +36,7 @@ export function Footer() {
                 {/* Línea divisoria */}
                 <hr className="border-gray-700 mb-8" />
 
-              {/* Texto debajo de la línea, alineado a la izquierda */}
+              {/* Texto debajo de la línea*/}
               <div className="text-gray-300">
                 <span>Edificio Design Center</span>
               </div>

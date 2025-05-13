@@ -61,10 +61,6 @@ export function ContactUs() {
                     </button>
                 </form>
             </div>
-
-            {/* Black container */}
-            
-
         </section>
     )
 }

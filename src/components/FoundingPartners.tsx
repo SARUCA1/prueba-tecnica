@@ -29,7 +29,7 @@ export function FoundingPartners() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-7xl mx-auto mt-5">
             {partners.map((p) => (
                 <div key={p.name} className="relative">
-                {/* Hexágono solapado */}
+                {/* Hexágono */}
                 <div className="relative">
                     <div className="flex items-end mb-[-52px] pl-12 md:pl-16">
                         <img
