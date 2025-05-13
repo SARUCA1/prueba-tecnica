@@ -16,7 +16,7 @@ Proyecto de ejemplo que utiliza Vite como herramienta de construcción y React c
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-repo.git
+   git clone https://github.com/SARUCA1/prueba-tecnica
    cd tu-repo
    ```
 2. Instala las dependencias:
