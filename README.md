@@ -1,54 +1,92 @@
-# React + TypeScript + Vite
+# Proyecto Vite + React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene la prueba tecnica.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Proyecto de ejemplo que utiliza Vite como herramienta de construcción y React como librería de interfaz de usuario.
 
-## Expanding the ESLint configuration
+## Requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Node.js (versión 14 o superior)
+* npm (v6 o superior) o Yarn
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Instalación
+
+1. Clona este repositorio:
+
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repo.git
+   cd tu-repo
+   ```
+2. Instala las dependencias:
+
+   ```bash
+   npm install
+   ```
+
+   o si usas Yarn:
+
+   ```bash
+   yarn install
+   ```
+
+## Ejecución en modo desarrollo
+
+Inicia el servidor de desarrollo con hot reload:
+
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Por defecto, estará disponible en [http://localhost:5173](http://localhost:5173).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Compilación para producción
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Genera los archivos estáticos optimizados:
+
+```bash
+npm run build
+```
+
+Los artefactos se generarán en la carpeta `dist/`.
+
+## Vista previa de producción
+
+Puedes previsualizar el build con:
+
+```bash
+npm run preview
+```
+
+## Estructura del proyecto
+
+La estructura de carpetas y archivos de este proyecto es la siguiente:
+
+```
+.
+├── public/                 # Archivos estáticos servidos tal cual
+├── src/                    # Código fuente
+│   ├── assets/             # Imágenes y recursos estáticos
+│   ├── components/         # Componentes React en TypeScript
+│   │   ├── Arrow.tsx
+│   │   ├── CompanyPortfolio.tsx
+│   │   ├── ContactUs.tsx
+│   │   ├── Footer.tsx
+│   │   ├── FoundingPartners.tsx
+│   │   ├── Hero.tsx
+│   │   ├── TrustedBy.tsx
+│   │   └── WhoWeAre.tsx
+│   ├── App.tsx             # Componente raíz de la aplicación
+│   ├── App.css             # Estilos globales de App
+│   ├── index.css           # Estilos globales y variables
+│   ├── main.tsx            # Punto de entrada y montaje de React
+│   └── vite-env.d.ts       # Definiciones de tipos para Vite + TS
+├── tsconfig.json           # Configuración base de TypeScript
+├── tsconfig.app.json       # Configuración de TS para la aplicación (opcional)
+├── vite.config.ts          # Configuración de Vite
+├── package.json            # Dependencias y scripts
+├── package-lock.json       # Lockfile generado por npm
+├── README.md               # Documentación del proyecto
+└── .gitignore              # Archivos y carpetas ignorados por Git
 ```
